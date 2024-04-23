@@ -141,12 +141,9 @@ def lambda_handler(event, context):
             Source=SOURCE_EMAIL_ADDRESS
             )
             
-            logger.info (response);
-            
+            logger.info (response);           
             logMsg = "Email sent to the customer " + customerName
             logger.info(logMsg)
-            
-    
 
             return {
                 "statusCode" : 200,
