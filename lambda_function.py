@@ -38,16 +38,6 @@ def lambda_handler(event, context):
 
 
     try:
-        #for message in queue.receive_messages():
-        #    data = message.body
-        #    data = json.loads(data)
-        #    logger.info("Event: ", event);
-            
-        #    print(data)
-            
-        #    print ("Event: %s" % json.dumps(data))
-
-        #    message.delete()
             
             # Generating Order id
             orderId = str(uuid.uuid4())
